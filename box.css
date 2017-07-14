@@ -1,0 +1,30 @@
+body {
+	background-color: lightblue;
+	
+}
+
+#box{
+	width: 100px;
+	height: 100px;
+	padding: 5px;
+	border: 15px solid white;
+	margin: 0px 100px 200px 300px;
+	animation: magic 3s alternate;
+	animation-iteration-count: infinite
+}
+
+@keyframes magic {
+	0% {background-color: red;
+		border: 5px solid black; color: green;
+		}
+	50% {
+		background-color: blue; transform: translate(10px, 500px) rotate3d(2, 7, 0, 270deg)
+		scale(.25, .5);
+	}
+		
+	100% {background-color: gold;
+		border: 5px solid white; color: black;
+		transform: translate(250px, 200px) rotate(11250deg);
+	}
+	
+}
